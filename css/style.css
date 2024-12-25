@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.header-principal .personal {
+  margin-left: 15px;
+}
+.header-principal .personal ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.header-principal .personal a {
+  color: #303030;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 8px;
+}
+.header-principal .personal a:hover {
+  color: #909090;
+}
+.header-principal .personal a::after {
+  content: "";
+  display: block;
+  color: #909090;
+  width: 0%;
+  height: 2px;
+  background-color: #909090;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+}
+.header-principal .personal a:hover::after {
+  width: 100%;
+}
+.header-principal .logo {
+  margin-left: 3%;
+}
+.header-principal .logo img {
+  width: 80%;
+}
+
+.redes-sociales {
+  margin-right: 15px;
+}
+.redes-sociales ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.redes-sociales li a {
+  text-decoration: none;
+}
+.redes-sociales li a img:hover {
+  color: #909090;
+}
+
+.container-main {
+  display: grid;
+  grid-template-columns: 25% 45% 30%;
+  gap: 10px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-end;
+  width: 73%;
+  margin-bottom: 16%;
+}
+.service h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+.service article .icon-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.service article img {
+  background-color: white;
+  padding: 6px;
+  width: 20%;
+  margin: 0;
+}
+.service article .title-service {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.service article .text-service {
+  color: #909090;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.imagen-personal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.imagen-personal p {
+  font-family: "Oswald", sans-serif;
+  font-size: 81px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+  margin-bottom: 19px;
+  padding-bottom: 12px;
+  position: relative;
+}
+.imagen-personal p::after {
+  content: "";
+  display: block;
+  color: #909090;
+  width: 11%;
+  height: 5px;
+  background-color: #909090;
+  transition: width 0.5s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+}
+.imagen-personal p:hover::after {
+  width: 100%;
+}
+.imagen-personal img {
+  width: 100%;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 15%;
+  margin-left: 10px;
+}
+.presentacion h1 {
+  font-family: "Oswald", sans-serif;
+  color: #303030;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 25px;
+  margin-left: 0;
+  padding-bottom: 8px;
+}
+.presentacion .text-presentacion-01 {
+  color: #909090;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 25px;
+  margin-bottom: 23px;
+  width: 80%;
+  margin-left: 0;
+}
+.presentacion .text-presentacion-02 {
+  color: #909090;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 25px;
+  margin-bottom: 35px;
+  margin-left: 0;
+  width: 80%;
+}
+
+.button {
+  margin-bottom: 50px;
+  margin-left: 0;
+}
+.button a {
+  text-decoration: none;
+  padding: 12px 30px;
+  background-color: #303030;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 40px;
+  transition: 0.7s;
+}
+.button a:hover {
+  background-color: #909090;
+}
+
+.experiencia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  gap: 30px;
+}
+.experiencia article .title-experiencia {
+  color: #303030;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+.experiencia article .text-experiencia {
+  color: #909090;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+html * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e9e8e8;
+  background-image: url("../../img/background.svg");
+  background-repeat: no-repeat;
+  background-size: 105% 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+main {
+  margin-left: 15px;
+  margin-left: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
